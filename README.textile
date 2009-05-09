@@ -19,16 +19,14 @@ h2. Helpers
 |_. helper |_. param |_. block |_. notes |
 | js_data_tag | "dom_id" | yes | Used anywhere, the string param represents the dom_id. |
 | f.js_data | *none* | yes | Used inside of a FormBuilder, the dom_id param will be inferred through the Builder and refer to the ID of the Form. |
-| js_data_functions | :framework | *none* | Used in your layout file just before the end BODY tag. This will Javascript inline to insert data into your DOM. |
+| js_data_functions | :framework | *none* | Used in your layout file just before the end BODY tag. This will output Javascript inline to insert data into your DOM. Framework is defined as a symbol. |
 
+h2. Example
 
+This demonstration for jQuery shows a variety of test values. In your *view* do something like:
 
-js_data_functions :jquery
-
-h2. Usage
-
+<pre><code>
 - js_data_tag "test" do |d|
-  - d.set :js_data_tag, '1'
   - d.set :test_number, 2
   - d.set :test_float, 2.2
   - d.set :test_true, true
@@ -40,10 +38,57 @@ h2. Usage
   - d.set :test_string, 'some string'
   - d.set :test_quoted_function, "function(){ alert('true') }"
   - d.set :test_reverse_quoted_function, 'function(){ alert("true") }'
+</code></pre>
 
+Then throw this in your *layout*:
 
-show how to use here ...
+<pre><code>
+= js_data_functions :jquery
+</code></pre>
 
+And you will see this in your *DOM*:
 
+<pre><code>
+<script type='text/javascript'>
+  $('#test').data('railsData', {
+    test_NaN:NaN, 
+    test_UPPERCASE:'UPPERCASE', 
+    test_false:false, 
+    test_float:2.2, 
+    test_nil:null, 
+    test_null_as_string:null, 
+    test_number:2, 
+    test_quoted_function:function(){ alert('true') }, 
+    test_reverse_quoted_function:function(){ alert("true") }, 
+    test_string:'some string', 
+    test_true:true
+  });
+</script>
+</code></pre>
+
+Now in your *application.js* you can do:
+
+<pre><code>
+$(function() {
+  console.log($('#test').data('railsData'));
+});
+</code></pre>
+
+Though realistically, you might do something more like:
+
+<pre><code>
+$(function() {
+  $('post').each(function(){
+    var data = $(this).data('railsData');
+    if (data){
+      if (data.published){
+        $(this).find('td.title').css('font-weight', 'bold')
+      } else {
+        $(this).find('td').css('color', 'red')
+      };
+    };
+  });
+});
+</code></pre>
 
 Copyright (C) 2009 *CodeOfficer*, released under the *"MIT license":http://en.wikipedia.org/wiki/MIT_License*
