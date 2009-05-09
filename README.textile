@@ -16,9 +16,9 @@ Sometimes we need to pass data to Javascript. We might decide to use custom attr
 
 h2. Helpers
 
-|_. kind |_. helper |_. attribute |_. attribute |
-| regular | js_data_tag | "dom_id" | &block |
-| form builder| f.js_data | &block | |
+|_. helper |_. param |_. param |_. notes |
+| js_data_tag | "dom_id" | &block | Used anywhere, the string param represents the dom_id|
+| f.js_data | &block | | Used inside of a form builder, the dom_id param will be inferred through the builder |
 
 h2. Usage
 
