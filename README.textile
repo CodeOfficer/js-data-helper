@@ -17,8 +17,8 @@ Sometimes we need to pass data to Javascript. We might decide to use custom attr
 h2. Helpers
 
 |_. kind |_. helper |_. attribute |_. attribute |
-| regular | js_data_tag | "dom_id" | <block> |
-| form builder| f.js_data | <block> | |
+| regular | js_data_tag | "dom_id" | &block |
+| form builder| f.js_data | &block | |
 
 h2. Usage
 
