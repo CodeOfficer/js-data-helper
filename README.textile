@@ -82,9 +82,9 @@ $(function() {
     var data = $(this).data('railsData');
     if (data){
       if (data.published){
-        $(this).find('td.title').css('font-weight', 'bold')
+        $(this).find('.title').css('font-weight', 'bold');
       } else {
-        $(this).find('td').css('color', 'red')
+        $(this).find('.title').css('color', 'red');
       };
     };
   });
