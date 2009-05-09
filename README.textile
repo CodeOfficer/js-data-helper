@@ -4,7 +4,7 @@ It's a Rails plugin that will help you pass data from Rails to Javascript.
 
 h2. Requirements
 
-JS Data Helper requires either jQuery 1.2.3+, Prototype 1.6.1+ or Mootools 1.2+. Each of those Javascript frameworks has a data/store function built in.
+JS Data Helper requires either "jQuery":http://jquery.com/ 1.2.3+, "Prototype":http://www.prototypejs.org/ 1.6.1+ or "Mootools":http://mootools.net/ 1.2+. Each of those Javascript frameworks has a data/store function built in.
 
 h2. How does it work?
 
@@ -12,7 +12,7 @@ You use helpers in Rails to convert Ruby values to their Javascript equivalents.
 
 h2. But why not just use custom DOM attributes?
 
-Sometimes we need to pass data to javascript. We might decide to use custom attributes to hide data in our DOM elements but then we would run into a situation where our markup does not validate. We may also try to hide values in class attributes but then we're be stepping on the toes of our designers. I am of the opinion that data meant for Javascript should remain in javascript.
+Sometimes we need to pass data to Javascript. We might decide to use custom attributes to hide data in our DOM elements but then we would run into a situation where our markup does not validate. We may also try to hide values in class attributes but then we're be stepping on the toes of our designers. I am of the opinion that data meant for Javascript should remain in Javascript.
 
 h2. Usage
 
