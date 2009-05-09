@@ -40,7 +40,7 @@ This demonstration for jQuery shows a variety of test values. In your *view* do 
   - d.set :test_reverse_quoted_function, 'function(){ alert("true") }'
 </code></pre>
 
-Then throw this in your *layout*:
+Then throw this in your *layout*, you can also specify :mootools or :prototype:
 
 <pre><code>
 = js_data_functions :jquery
