@@ -1,10 +1,35 @@
-JS Data Helper Readme 
-----------------------------------------------------------------
-* Web:        http://www.codeofficer.com/
-* Email:      spam*@*codeofficer*dot*com
+h1. JS Data Helper
+
+| Author | CodeOfficer |
+| Email | spam*@*codeofficer*dot*com |
+| Web | http://www.codeofficer.com/ |
 
 
-Documentation to come ...
+h2. What is it?
+
+JS Data Helper is a Rails plugin.
+
+
+h2. What's it do?
+
+It will help you pass server side data from Ruby to Javascript without using custom attributes in your DOM. 
+
+
+h2. How does it do that?
+
+
+h2. But why not just use custom DOM attributes?
+
+Sometimes we need to pass data to javascript
+
+
+h2. Requirements
+
+JS Data Helper requires either jQuery 1.2.3+, Prototype 1.6.1+ or Mootools 1.2+. Each of those Javascript frameworks has a data/store function built in
+
+
+
+h2. Usage
 
 
 Copyright (c) 2009 CodeOfficer, released under the MIT license 
