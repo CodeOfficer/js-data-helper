@@ -18,8 +18,8 @@ h2. Helpers
 
 |_. helper |_. param |_. block |_. notes |
 | js_data_tag | "dom_id" | yes | Used anywhere, the string param represents the dom_id. |
-| f.js_data | *none* | yes | Used inside of a form builder, the dom_id param will be inferred through the builder and refer to the ID of the form. |
-| js_data_functions | :framework | *none* | Used in your layout file just before the end BODY tag. Outputs Javascript inline to insert data into your DOM. |
+| f.js_data | *none* | yes | Used inside of a FormBuilder, the dom_id param will be inferred through the Builder and refer to the ID of the Form. |
+| js_data_functions | :framework | *none* | Used in your layout file just before the end BODY tag. This will Javascript inline to insert data into your DOM. |
 
 
 
