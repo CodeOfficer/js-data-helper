@@ -1,6 +1,4 @@
-h1. JS Data Helper
-
-h2. What is it?
+h1. What is it?
 
 It's a Rails plugin that will help you pass data from Rails to Javascript.
 
