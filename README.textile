@@ -96,6 +96,7 @@ h1. Further Reading
 *jQuery*
 
 "http://docs.jquery.com/Core/data#name":http://docs.jquery.com/Core/data#name
+
 "http://docs.jquery.com/Core/data#namevalue":http://docs.jquery.com/Core/data#namevalue
 
 <pre><code>
@@ -106,6 +107,7 @@ $('#myElement').data('test1');
 *MooTools*
 
 Element.Storage is brand new in MooTools 1.2
+
 "http://mootools.net/blog/2008/01/22/whats-new-in-12-element-storage/":http://mootools.net/blog/2008/01/22/whats-new-in-12-element-storage/
 
 <pre><code>
@@ -116,7 +118,9 @@ $('myElement').retrieve('test1');
 *Prototype*
 
 Element.Storage is brand new in Prototype 1.6.1 (and borrowed from mootools)
+
 "http://www.prototypejs.org/2009/2/16/pimp-my-code-1-element-storage":http://www.prototypejs.org/2009/2/16/pimp-my-code-1-element-storage
+
 "http://github.com/sstephenson/prototype/tree/master":http://github.com/sstephenson/prototype/tree/master
 
 <pre><code>
