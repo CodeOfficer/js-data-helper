@@ -14,7 +14,27 @@ h2. But why not just use custom DOM attributes?
 
 Sometimes we need to pass data to Javascript. We might decide to use custom attributes to hide data in our DOM elements but then we would run into a situation where our markup does not validate. We may also try to hide values in class attributes but then we're be stepping on the toes of our designers. I am of the opinion that data meant for Javascript should remain in Javascript.
 
+h2. Helpers
+
+|_. kind |_. helper |_. attribute |_. attribute |
+| regular | js_data_tag | "dom_id" | <block> |
+| form builder| f.js_data | <block> | |
+
 h2. Usage
+
+- js_data_tag "test" do |d|
+  - d.set :js_data_tag, '1'
+  - d.set :test_number, 2
+  - d.set :test_float, 2.2
+  - d.set :test_true, true
+  - d.set :test_false, false
+  - d.set :test_null_as_string, 'null'
+  - d.set :test_nil, nil
+  - d.set :test_NaN, 'NaN'
+  - d.set :test_UPPERCASE, 'UPPERCASE'
+  - d.set :test_string, 'some string'
+  - d.set :test_quoted_function, "function(){ alert('true') }"
+  - d.set :test_reverse_quoted_function, 'function(){ alert("true") }'
 
 
 show how to use here ...
