@@ -1,8 +1,8 @@
 h1. JS Data Helper
 
-|< Author |< CodeOfficer |
-|< Email |< spamATcodeofficerDOTcom |
-|< Web |< "http://www.codeofficer.com/":http://www.codeofficer.com/ |
+|<. Author |<. CodeOfficer |
+|<. Email |<. spamATcodeofficerDOTcom |
+|<. Web |<. "http://www.codeofficer.com/":http://www.codeofficer.com/ |
 
 
 h2. What is it?
