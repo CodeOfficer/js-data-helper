@@ -10,7 +10,7 @@ h2. How Does It work?
 
 You use helpers in Rails to convert Ruby values to their Javascript equivalents. The values are collected and then output to your layout file just before the closing BODY tag. The output is actually inline Javascript, appropriate to the Javascript framework you are using. It will use the data storage methods of the Javascript framework you specify to insert data into DOM elements you have referenced by ID. This will occur inline and before dom.ready, so you know the data will be available when you need it.
 
-h2. but Why Not Just Use Custom DOM Attributes?
+h2. But Why Not Just Use Custom DOM Attributes?
 
 Sometimes we need to pass data to Javascript. We might decide to use custom attributes to hide data in our DOM elements but then we would run into a situation where our markup does not validate. We may also try to hide values in class attributes but then we're be stepping on the toes of our designers. I am of the opinion that data meant for Javascript should remain in Javascript.
 
@@ -93,7 +93,7 @@ $(function() {
 
 h1. Further Reading
 
-*jQuery*
+*jQuery 1.2.3+*
 
 "http://docs.jquery.com/Core/data#name":http://docs.jquery.com/Core/data#name
 
@@ -104,7 +104,7 @@ $('#myElement').data('test1', 1);
 $('#myElement').data('test1');
 </code></pre>
 
-*MooTools*
+*MooTools 1.2+*
 
 Element.Storage is brand new in MooTools 1.2
 
@@ -115,7 +115,7 @@ $('myElement').store('test1', 1);
 $('myElement').retrieve('test1');
 </code></pre>
 
-*Prototype*
+*Prototype 1.6.1+*
 
 Element.Storage is brand new in Prototype 1.6.1 (and borrowed from mootools)
 
