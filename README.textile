@@ -23,7 +23,7 @@ h2. Helpers
 
 h2. Example
 
-This demonstration for jQuery shows a variety of test values. In your *view* do something like:
+This demonstration for jQuery shows a variety of test values. I'm using HAML, but you could just as easily use ERB. In your *view* do something like:
 
 <pre><code>
 - js_data_tag "test" do |d|
@@ -78,7 +78,7 @@ Though realistically, you might do something more like:
 
 <pre><code>
 $(function() {
-  $('post').each(function(){
+  $('.post').each(function(){
     var data = $(this).data('railsData');
     if (data){
       if (data.published){
